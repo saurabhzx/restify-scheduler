@@ -8,7 +8,7 @@ import javax.persistence.*;
 import java.time.LocalDateTime;
 
 @Entity
-@Table(name = "JOB_ENTITY")
+@Table(name = "JOB_REQUEST_HEADER")
 @EntityListeners(AuditingEntityListener.class)
 public class JobRequestHeader {
     @Id

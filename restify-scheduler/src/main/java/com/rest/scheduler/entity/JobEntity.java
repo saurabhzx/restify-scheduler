@@ -37,7 +37,7 @@ public class JobEntity {
     @Convert(converter= BooleanToYNConverter.class)
     private Boolean isActive = true;
 
-    @OneToMany(mappedBy = "JOB_ENTITY", cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany(mappedBy = "jobEntity", fetch = FetchType.LAZY,cascade = CascadeType.ALL, orphanRemoval = true)
     private List<JobRequestHeader> jobRequestHeader;
 
     @Enumerated(EnumType.STRING)
